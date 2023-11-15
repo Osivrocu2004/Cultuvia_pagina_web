@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:  smooth;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+ul{
+    list-style: none;
+}
+button{
+    font-size:  1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1.5px solid rgba(0,0,0,0,6);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,5);
+    background-color: gainsboro;
+}
+button:hover{
+    background-color: aqua;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+header .logo{
+    margin:0;
+    padding: 20px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+}
+.imgf {
+    margin-right: -450px; 
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding:  5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(88, 155, 88);
+}
+header a:hover{
+    color: aqua;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 155vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/learncult.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#que-son-señales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 155vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.77),
+        rgba(0,0,0,0.77)
+    )
+    ,url("media/Señales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+   
+
+}
+
+#que-son-señales{
+    text-align: center;
+    padding: 200px 12px;
+
+   
+}
+
+#que-son-señales{
+    text-shadow: 2px 2px 4px rgba(25, 27, 31, 0.103);
+    color:whitesmoke;
+}
+  
+#senales-transito{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#senales-transito .container{
+    padding: 150px 12px;
+}
+#senales-transito h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#senales-transito p{
+    color: rgb(247, 239, 239);
+}
+
+#senales-transito .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)), url("media/ceda_pasojpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)), url("media/stop.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)), url("media/cruce_peatonal.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: antiquewhite;
+}
+
+footer ul {
+    margin: 0;
+    color: rgb(20, 19, 19);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(216, 227, 238);
+}
+@media (min-width: 1080px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 30px;
+
+    }
+
+    #que-son-señales .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+   
+
+    #que-son-señales h2{
+        margin-top: 0px;
+    }
+    #senales-transito .senales{
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    #senales-transito p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #senales-transito h3{
+        margin-top: 0;
+    }
+    #senales-transito .carta{
+       padding: 50px
+    }
+
+   
+}
+@media (max-width: 760px) {
+    /* Estilos específicos para pantallas pequeñas aquí */
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    /* Agrega más reglas según sea necesario */
+    #hero {
+        height: 100vh; /* Ajusta la altura del héroe para pantallas pequeñas */
+    }
+}
